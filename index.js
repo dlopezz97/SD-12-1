@@ -35,7 +35,8 @@ switch (task) {
   case 4:
     globalThis.getServerURL = task1.getServerURL;
     globalThis.delUser = task4.delUser;
-    delUser(6);
     delUser(5);
+    delUser(7);
+
     setTimeout(function () { fetch(getServerURL() + "/users").then(response => response.json()).then(data => console.log(data)); }, 2000);
 }
